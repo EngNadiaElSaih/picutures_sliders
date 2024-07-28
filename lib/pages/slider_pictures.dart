@@ -2,12 +2,12 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 
-class MyApp extends StatefulWidget {
+class home extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _homeState createState() => _homeState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _homeState extends State<home> {
   final _totalDots = 4;
   int _currentPosition = 0;
 
@@ -90,8 +90,7 @@ class _MyAppState extends State<MyApp> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: Image.asset(
-                      imagePaths as String,
-                      // imagePaths[_currentPosition],
+                      imagePaths[_currentPosition],
                     ),
                   ),
                 ),
